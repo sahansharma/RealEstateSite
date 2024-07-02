@@ -1,0 +1,345 @@
+<html>
+<head>
+<title>
+</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    #container {
+        margin: 0px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    #scrollable-content {
+        margin: 0;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+    
+    .placeholder {
+        margin: 0px;
+      width: 100%;
+      height: 100%;
+      background-image: url(house.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size:cover;
+      margin: 10px;
+      display:grid;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .arrow-l,.arrow-r{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      border: 1px solid black;
+      border-radius: 60px;
+      background-color: lightgray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .arrow-l{
+        left:10%;
+    }
+    .arrow-r{
+        left:90%;
+    }
+    .outer-buy {
+    display: flex;
+    justify-content: center;
+    margin: 4vh;
+}
+
+.outer-buy > div {
+    width: 50%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.outer-buy > div:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* For mobile screens, stack the divs vertically */
+@media (max-width: 768px) {
+    .outer-buy {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .outer-buy > div {
+        width: 80%; /* Adjust width for mobile */
+        margin: 10px 0; /* Add spacing between stacked divs */
+    }
+}
+
+    .inner-buy img{
+        align-items: center;
+        width: 100%;
+        max-height:fit-content;
+    }
+    .inner-details {
+        max-height: fit-content;
+        border: 2px solid black;
+    }
+    /* Style for property details */
+.property-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.property-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.property-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.property-details .price {
+    font-size: 24px;
+    color: #3498db;
+}
+
+.property-details .icon {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #3498db;
+}
+
+.property-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Additional styling */
+.outer-buy {
+    display: flex;
+    justify-content: center;
+    margin: 4vh;
+}
+
+.outer-buy > div {
+    width: 50%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.outer-buy > div:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* For mobile screens, stack the divs vertically */
+@media (max-width: 768px) {
+    .outer-buy {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .outer-buy > div {
+        width: 80%; /* Adjust width for mobile */
+        margin: 10px 0; /* Add spacing between stacked divs */
+    }
+}
+
+  </style>
+</head>
+<body>
+<nav>
+<div>
+<ul class="header-out">
+<li><a href="index.html">Home</a></li>
+<li class="dropdown"><a href="#">Buy/Rent</a>
+<ul class="dropdown-content">
+<li><a href="buy.html">I'm a buyer</a></li>
+<li><a href="#">I'm a tennant</a></li>
+</ul>
+</li>
+<li><a href="sell.html">Sell</a></li>
+<li class="dropdown"><a href="#">Manage</a>
+<ul class="dropdown-content">
+<li><a href="purchase.html">Renovate</a></li>
+<li><a href="#">Others</a></li>
+</ul>
+</li>
+<li><a href="contacts.html">Contacts</a></li>
+</ul>
+</div>
+</nav>
+  <div id="container">
+    <div id="scrollable-content">
+      <div class="placeholder"><a href="">Buy Now</a></div>
+    </div>
+    <div class="arrow-l" id="left-arrow">&lt;</div>
+    <div class="arrow-r" id="right-arrow">&gt;</div>
+  </div>
+</div>
+
+<h1>Search</h1>
+<div class="outer-buy">
+    <div class="inner-buy">
+        <a href="#"><img src="house1.jpg"></a>
+    </div>
+    <div>
+      <div class="property-details">
+        <div>
+            <h2>Kathmandu, Baneshwor</h2>
+            <p>3,219 sqft</p>
+            <p>$349 price/sqft</p>
+            <p>Single family residence</p>
+            <p class="price"><i class="icon fa fa-money"></i>300,000</p>
+            <p>2 Bedrooms</p>
+            <p>Built in 1920</p>
+        </div>
+        <div>
+            <h2>Description</h2>
+            <p class="property-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni reiciendis repudiandae explicabo officia
+                voluptatibus mollitia ratione quos optio aspernatur eaque aliquid ipsum, omnis, adipisci consequuntur qui
+                excepturi veniam molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolore vero dolorum
+                ducimus minus. Facere accusamus, dignissimos sed officiis dolor eveniet impedit, recusandae commodi sit
+                consequuntur quod nesciunt hic vitae?
+            </p>
+        </div>
+    </div>
+    
+    </div>
+</div>
+
+
+<div class="outer-p_image">
+  <div><a href="#"><img src="house3.jpg"></a>
+	<address>Kathmandu, Baneshwor</address>
+	<p><i style="font-size:20px" class="fa">&#xf155;</i>300,000</p>
+  <p>2 Bedrooms</p>
+  </div>
+	<div><a href="#"><img src="house4.jpg"></a>
+		<address>Kathmandu, Baneshwor</address>
+    <p><i style="font-size:20px" class="fa">&#xf155;</i>300,000</p>
+    <p>2 Bedrooms</p>
+  </div>
+	<div><a href="#"><img src="house3.jpg"></a>
+		<address>Kathmandu, Baneshwor</address>
+    <p><i style="font-size:20px" class="fa">&#xf155;</i>300,000</p>
+    <p>2 Bedrooms</p>
+  </div>
+	<div><a href="#"><img src="house.jpg"></a>
+		<address>Kathmandu, Baneshwor</address>
+    <p><i style="font-size:20px" class="fa">&#xf155;</i>300,000</p>
+    <p>2 Bedrooms</p>
+  </div>
+	<div><a href="#"><img src="house3.jpg"></a>
+		<address>Kathmandu, Baneshwor</address>
+    <p><i style="font-size:20px" class="fa">&#xf155;</i>300,000</p>
+    <p>2 Bedrooms</p>
+	</div>
+</div>
+
+<footer class="footer">
+   <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Services-1</a></li>
+          <li><a href="#">Services-1</a></li>
+          <li><a href="#">Services-1</a></li>
+          <li><a href="#">Services-1</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Services-1</a></li>
+          <li><a href="#">Services-1</a></li>
+          <li><a href="#">Services-1</a></li>
+          <li><a href="#">Services-1</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Services-1</a></li>
+          <li><a href="#">Services-1</a></li>
+          <li><a href="#">Services-1</a></li>
+          <li><a href="#">Services-1</a></li>
+          <li><a href="#">Services-1</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services-1</h4>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Services-1</a></li>
+          <li><a href="#">Services-1</a></li>
+          <li><a href="#">Services-1</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+   </div>
+</footer>
+  <div>
+      <ul class="header-out" style="text-align: right;">
+          &lt;&lt;&copy;GLS Property Management&gt;&gt;
+          <li><a href="#"><i style="font-size:24px" class="fa">&#xf230;</i></a></li>
+          <li><a href="#"><i style="font-size:24px" class="fa">&#xf16d;</i></a></li>
+          <li><a href="#"><i style="font-size:24px" class="fa">&#xf167;</i></a></li>
+      </ul>
+  </div>
+
+</body>
+</html>
+
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const images = ["house.jpg","house1.jpg", "house2.jpg", "house3.jpg"]; // Add your image URLs here
+        let currentIndex = 0;
+
+        const placeholder = document.querySelector(".placeholder");
+        const leftArrow = document.querySelector("#left-arrow");
+        const rightArrow = document.querySelector("#right-arrow");
+
+        function updateImage() {
+            placeholder.style.backgroundImage = `url(${images[currentIndex]})`;
+        }
+
+        leftArrow.addEventListener("click", function() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateImage();
+        });
+
+        rightArrow.addEventListener("click", function() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateImage();
+        });
+
+        // Initial image update
+        updateImage();
+    });
+</script>
+  </html>
