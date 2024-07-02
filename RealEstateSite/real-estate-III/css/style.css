@@ -58,7 +58,7 @@ h2{
     color: #c9c074;
 }
 .outer-contact{
-    background-image: url(information.jpg);
+    background-image: url('../images/information.jpg');
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ h2{
 .business-tag{
     color: #f8f8f2;
     font-weight: lighter;
-    background-image: url(banner.jpg);
+    background-image: url('../images/banner.jpg');
     height: 100%;
     font-weight: lighter;
 }
