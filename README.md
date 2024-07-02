@@ -1,6 +1,6 @@
 
 # Project Title
-
+![sc1](https://github.com/sahansharma/RealEstateSite/assets/105370268/5d82cc7b-0c25-4c6c-9046-080e3aecdca7)
 This project is a simple website built using HTML, CSS, and JavaScript. It showcases basic frontend development techniques and serves as a learning project for web development beginners.
 
 
@@ -18,7 +18,6 @@ We welcome contributions! Please fork this repository and submit pull requests t
 
 
 ## Screenshots
-![sc1](https://github.com/sahansharma/RealEstateSite/assets/105370268/5d82cc7b-0c25-4c6c-9046-080e3aecdca7)
 ![sc2](https://github.com/sahansharma/RealEstateSite/assets/105370268/f3537f77-537f-4dfb-9f34-f9f44bc1b7cf)
 ![sc4](https://github.com/sahansharma/RealEstateSite/assets/105370268/3e10f50e-97e0-4738-a860-ca69eb9d4602)
 ![sc5](https://github.com/sahansharma/RealEstateSite/assets/105370268/0cbd7586-b0b8-4397-ba18-79a1dc305aca)
